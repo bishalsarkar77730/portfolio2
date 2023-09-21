@@ -1,0 +1,34 @@
+name: Angular FTP Staging Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+       
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+        
+      - name: Build Node App
+        run: npm run build
+        
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: '/'
+          local-dir: './dist/browser/' # Change this to your build output directory
