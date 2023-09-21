@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: '/'
-          local-dir: './dist/browser/' # Change this to your build output directory
+          local-dir: './build/' # Change this to your build output directory
