@@ -1,40 +1,14 @@
-import React from "react";
-import "./Footer.css";
-import Wave from "../../img/wave.png";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
-
+import "../../Pages/Home/Home.css";
 const Footer = () => {
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
-      <div className="f-content">
-        <span>bishalsarkar.ml@gmail.com</span>
-        <div className="f-icons">
-          <a
-            href="https://www.instagram.com/__.bishalsarkar/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Insta color="white" size={"3rem"} />
-          </a>
-          <a
-            href="https://www.facebook.com/Bishal77730"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Facebook color="white" size={"3rem"} />
-          </a>
-          <a
-            href="https://github.com/bishalsarkar77730"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Gitub color="white" size={"3rem"} />
-          </a>
+    <div>
+      <footer className="footer" id="resources">
+        <div className="attribution">
+          Created By
+          <span className="outer-link"> And </span>. Coded by{" "}
+          <span className="outer-link">Bishal Sarkar</span>.
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
