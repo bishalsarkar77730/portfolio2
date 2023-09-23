@@ -1,14 +1,12 @@
-import Footer from './Components/Footer/Footer'
-import Navbar from './Components/Navbar/Navbar'
-// import Contactus from './Pages/Contactus/Contactus'
-import Home from './Pages/Home/Home'
+import Footer from './Components/Footer/Footer.jsx'
+import Navbar from './Components/Navbar/Navbar.jsx'
+import Home from './Pages/Home/Home.jsx'
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Home />
-      {/* <Contactus /> */}
       <Footer />
     </div>
   )
