@@ -1,6 +1,6 @@
-import Footer from './Components/Footer/Footer.jsx'
-import Navbar from './Components/Navbar/Navbar.jsx'
-import Home from './Pages/Home/Home.jsx'
+import Footer from "./components/footer/Footer.jsx";
+import Navbar from "./components/navbar/Navbar.jsx";
+import Home from "./pages/home/Home.jsx";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Home />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
