@@ -371,7 +371,7 @@ img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background: #3b3054 url(../images/bg-shorten-desktop.svg) no-repeat right top;
+  /* background: #3b3054 url(../images/bg-shorten-desktop.svg) no-repeat right top; */
   background-size: cover;
   padding: 45px;
   border-radius: 6px;
@@ -383,7 +383,7 @@ img {
 @media (max-width: 850px) {
   .url-shorten-form {
     flex-direction: column;
-    background: #3b3054 url(../images/bg-shorten-mobile.svg) no-repeat right top;
+    /* background: #3b3054 url(../images/bg-shorten-mobile.svg) no-repeat right top; */
     padding: 25px;
     margin-bottom: 0;
   }
@@ -739,14 +739,14 @@ img {
 
 .pricing {
   padding: 50px 0;
-  background: #3b3054 url(../images/bg-boost-desktop.svg) no-repeat right;
+  /* background: #3b3054 url(../images/bg-boost-desktop.svg) no-repeat right; */
   background-size: cover;
 }
 
 @media (max-width: 500px) {
   .pricing {
     padding: 90px 0;
-    background-image: url(../images/bg-boost-mobile.svg);
+    /* background-image: url(../images/bg-boost-mobile.svg); */
   }
 }
 
