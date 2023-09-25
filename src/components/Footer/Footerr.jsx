@@ -1,5 +1,5 @@
-import "../../Pages/Home/Home.css";
-const Footer = () => {
+import "../../pages/home/Home.css";
+const Footerr = () => {
   return (
     <div>
       <footer className="footer" id="resources">
@@ -13,4 +13,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footerr;

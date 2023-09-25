@@ -10,7 +10,7 @@ const Home = () => {
             Give Your Thougths, and I will create a Online presssence of it with
             the help of my expertise
           </p>
-          <a href="#" className="btn btn-lg">
+          <a href="#a" className="btn btn-lg">
             Contact-Me
           </a>
         </div>
