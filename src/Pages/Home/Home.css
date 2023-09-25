@@ -317,48 +317,49 @@ img {
 
 .landing .landing-image {
   position: relative;
-  right: -70px;
+  right: -70px !important;
 }
 
 @media (max-width: 992px) {
   .landing .landing-image {
     flex-basis: initial;
-    right: -240px;
+    right: -150px !important;
   }
 }
 
 @media (max-width: 767px) {
   .landing .landing-image {
-    right: -170px;
+    right: -170px !important;
   }
 }
 
 @media (max-width: 500px) {
   .landing .landing-image {
-    right: -110px;
+    right: -65px !important;
   }
 }
 
 @media (max-width: 375px) {
   .landing .landing-image {
-    right: -120px;
+    right: -50px !important;
   }
 }
 
 @media (max-width: 280px) {
   .landing .landing-image {
-    right: -70px;
+    right: -70px !important;
   }
 }
 
 @media (min-width: 1100px) {
   .landing .landing-image {
-    right: -130px;
+    right: -130px !important;
   }
 }
 
 .landing .landing-image img {
-  width: 100%;
+  width: 70%;
+  height: auto;
 }
 
 .features {
