@@ -1,4 +1,4 @@
-import "../../pages/home/Home.css";
+import "../../Pages/Home/Home.css";
 const Footerr = () => {
   return (
     <div>

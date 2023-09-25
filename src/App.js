@@ -1,7 +1,7 @@
 import './App.css';
-import Footerr from './components/footer/Footerr';
-import Navbar from './components/navbar/Navbar';
-import Home from './pages/home/Home';
+import Navbar from './components/Navbar/Navbar';
+import Home from './Pages/Home/Home';
+import Footerr from './components/Footer/Footerr';
 function App() {
   return (
     <div className="App">
