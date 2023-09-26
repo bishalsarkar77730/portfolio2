@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import "./Login.css";
 
 const Login = () => {
@@ -41,22 +41,31 @@ const Login = () => {
                 </div>
                 <div className="form-outline mb-4">
                   <div className="password-input-wrapper">
-                    <input
-                      type={showPassword ? "text" : "password"}
-                      id="form3Example4"
-                      className="form-control form-control-lg"
-                      placeholder="Enter password"
-                    />
+                    <div style={{ position: "relative" }}>
+                      <input
+                        type={showPassword ? "text" : "password"}
+                        id="form3Example4"
+                        className="form-control form-control-lg"
+                        placeholder="Enter password"
+                      />
+                      <div
+                        style={{
+                          position: "absolute",
+                          top: "50%",
+                          right: "10px",
+                          transform: "translateY(-50%)",
+                        }}
+                      >
+                        {showPassword ? (
+                          <FaRegEyeSlash onClick={togglePasswordVisibility} />
+                        ) : (
+                          <FaRegEye onClick={togglePasswordVisibility} />
+                        )}
+                      </div>
+                    </div>
                     <label className="form-label" htmlFor="form3Example4">
                       Password
                     </label>
-                    <div
-                      className="iconnn password-toggle-icon"
-                      onClick={togglePasswordVisibility}
-                    >
-                      {showPassword}
-                      {/* {showPassword ? <FaRegEyeSlash /> : <FaRegEye />} */}
-                    </div>
                   </div>
                 </div>
                 <div className="text-center text-lg-start mt-4 pt-2">
