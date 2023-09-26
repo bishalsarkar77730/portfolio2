@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll"; // Use alias ScrollLink
+import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -9,6 +10,16 @@ const Navbar = () => {
       style={{ position: "sticky", top: "0", zIndex: "100" }}
     >
       <div className="container-fluid">
+        <ScrollLink
+          className="nav-link"
+          aria-current="page"
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={300}
+        >
+          Bishal<span style={{ color: "white" }}>_</span>Sarkar
+        </ScrollLink>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,7 +34,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link"
                 aria-current="page"
                 to="home"
@@ -32,10 +43,10 @@ const Navbar = () => {
                 duration={300}
               >
                 Home
-              </Link>
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link"
                 aria-current="page"
                 to="about"
@@ -44,10 +55,10 @@ const Navbar = () => {
                 duration={300}
               >
                 About
-              </Link>
+              </ScrollLink>
             </li>
             <li className="nav-item">
-              <Link
+              <ScrollLink
                 className="nav-link"
                 aria-current="page"
                 to="projects"
@@ -56,7 +67,32 @@ const Navbar = () => {
                 duration={300}
               >
                 Projects
-              </Link>
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink
+                className="nav-link"
+                aria-current="page"
+                to="experiences"
+                spy={true}
+                smooth={true}
+                duration={300}
+              >
+                Experiences
+              </ScrollLink>
+            </li>
+            <li className="nav-item">
+              <ScrollLink
+                className="nav-link"
+                aria-current="page"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={300}
+              >
+                Contact
+              </ScrollLink>
             </li>
             <li className="nav-item dropdown">
               <a
@@ -67,49 +103,70 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Blogs
+                Notes
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a className="dropdown-item" href="#a">
-                    Action
+                  <a
+                    className="dropdown-item"
+                    href="https://codewithbishal.blogspot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Python Programming
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#a">
-                    Another action
+                  <a
+                    className="dropdown-item"
+                    href="https://mysqlwithbishal.blogspot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Sql & My-sql (DB)
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#a">
-                    Something else here
+                  <a
+                    className="dropdown-item"
+                    href="https://pythontkinterbishal.blogspot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Python (Tkinter)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="https://cprogrammwithbishal.blogspot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    C Programming
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="https://javascriptbybishal.blogspot.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    JavaScript
                   </a>
                 </li>
               </ul>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                aria-current="page"
-                to="experiences"
-                spy={true}
-                smooth={true}
-                duration={300}
-              >
-                Experiences
-              </Link>
+              <a className="nav-link" aria-current="page" href="#a">
+                Blogs
+              </a>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                aria-current="page"
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={300}
-              >
-                Contact
-              </Link>
+              <RouterLink className="nav-link" to="/dashboard-login">
+                Dashboard
+              </RouterLink>
             </li>
           </ul>
         </div>
