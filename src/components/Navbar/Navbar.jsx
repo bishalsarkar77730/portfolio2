@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as ScrollLink } from "react-scroll"; // Use alias ScrollLink
+import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 
@@ -159,9 +159,9 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#a">
+              <RouterLink className="nav-link" to="/blogs">
                 Blogs
-              </a>
+              </RouterLink>
             </li>
             <li className="nav-item">
               <RouterLink className="nav-link" to="/dashboard-login">
