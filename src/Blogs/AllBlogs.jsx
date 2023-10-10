@@ -1,129 +1,6 @@
 import React, { useState } from "react";
-import blogimage from "../Assets/blog.jpg";
 import { Link } from "react-router-dom";
-
-const blogsData = [
-  {
-    id: 1,
-    title: "Blog 1",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 2,
-    title: "Blog 2",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 3,
-    title: "Blog 3",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 4,
-    title: "Blog 4",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 5,
-    title: "Blog 5",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 6,
-    title: "Blog 6",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 7,
-    title: "Blog 7",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 8,
-    title: "Blog 8",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 9,
-    title: "Blog 9",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 10,
-    title: "Blog 10",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 11,
-    title: "Blog 11",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 12,
-    title: "Blog 12",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 13,
-    title: "Blog 13",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 14,
-    title: "Blog 14",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 15,
-    title: "Blog 15",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 16,
-    title: "Blog 16",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 17,
-    title: "Blog 15",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 18,
-    title: "Blog 16",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-  {
-    id: 19,
-    title: "Blog 15",
-    image: blogimage,
-    description: "Description for Blog 1...",
-  },
-  {
-    id: 20,
-    title: "Blog 16",
-    image: blogimage,
-    description: "Description for Blog 2...",
-  },
-];
+import blogsData from "./Blogs.json";
 
 const PAGE_SIZE = 9;
 
@@ -155,8 +32,8 @@ const AllBlogs = () => {
                 <p className="card-text">{blog.description}</p>
                 <Link
                   to="/one-blog"
-                  //   target="_blank"
-                  //   rel="noopener noreferrer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn btn-primary"
                 >
                   Read More

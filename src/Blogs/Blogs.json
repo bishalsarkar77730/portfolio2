@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Blog 1",
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+    "description": "Description for Blog 1..."
+  },
+  {
+    "id": 2,
+    "title": "Blog 2",
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+    "description": "Description for Blog 1..."
+  },
+  {
+    "id": 3,
+    "title": "Blog 3",
+    "image": "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+    "description": "Description for Blog 1..."
+  }
+]

@@ -1,5 +1,14 @@
 import React from "react";
 import "./Projects.css";
+import qr from "../../images/qr.png";
+import food from "../../images/fooddelivery.jpg";
+import chat from "../../images/chat.jpg";
+import employe from "../../images/employee.jpg";
+import map from "../../images/route.jpg";
+import face from "../../images/face.jpg";
+import meet from "../../images/meet.jpg";
+import block from "../../images/blockchain.png";
+import youtube from "../../images/youtube.png";
 
 const Projects = () => {
   return (
@@ -39,114 +48,90 @@ const Projects = () => {
                   <div className="carousel-item active">
                     <div className="row">
                       <div className="col-md-4 mb-3">
-                        <div className="card">
-                          <img
-                            className="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                          />
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
+                          <img className="img-fluid" alt="100%x280" src={qr} />
                           <div className="card-body">
                             <h4 className="card-title">
-                              Special title treatment
+                              QR Based Attendance system
                             </h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              Attendance Management System with QR code Using
+                              React, redux-toolkit and Node with database
+                              MongoDB.
                             </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Attendence_system"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4 mb-3">
-                        <div className="card">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
                           <img
                             className="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
+                            src={food}
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Food Delivery API</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              Food Ordering API with all possible features like
+                              location tracking food ordering and many more
+                              Using Nodejs and MongoDB.
                             </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/food_ordering_app"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4 mb-3">
-                        <div className="card">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
                           <img
                             className="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
+                            src={chat}
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Room based chat App</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              Room based chat app with socket.IO and node.js
+                              with react.js we can chat here with multiples
+                              people personaly
                             </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <div className="row">
-                      <div className="col-md-4 mb-3">
-                        <div className="card">
-                          <img
-                            className="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
-                          />
-                          <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
-                            <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 mb-3">
-                        <div className="card">
-                          <img
-                            className="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
-                          />
-                          <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
-                            <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-md-4 mb-3">
-                        <div className="card">
-                          <img
-                            className="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
-                          />
-                          <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
-                            <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
-                            </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Room-based-chat-app"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -155,56 +140,185 @@ const Projects = () => {
                   <div className="carousel-item">
                     <div className="row">
                       <div className="col-md-4 mb-3">
-                        <div className="card">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
                           <img
                             className="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
+                            src={employe}
                           />
                           <div className="card-body">
                             <h4 className="card-title">
-                              Special title treatment
+                              Employee management System
                             </h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              In this system we can manage payroles companies
+                              andd their employes with their salries and All
+                              Using MERN stack
                             </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/HUWA"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4 mb-3">
-                        <div className="card">
-                          <img
-                            className="img-fluid"
-                            alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
-                          />
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
+                          <img className="img-fluid" alt="100%x280" src={map} />
                           <div className="card-body">
                             <h4 className="card-title">
-                              Special title treatment
+                              MAP system for collage
                             </h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              In this system we can share ride between two
+                              persons in the same route to tha collage or some
+                              where else
                             </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Collagetoe_MERN"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4 mb-3">
-                        <div className="card">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
                           <img
                             className="img-fluid"
                             alt="100%x280"
-                            src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
+                            src={face}
                           />
                           <div className="card-body">
                             <h4 className="card-title">
-                              Special title treatment
+                              Face Recognation attendance
                             </h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              Face Recognation attendance system USing PYthon,
+                              pytorch numpy
                             </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Attendance-using-faceRecognition"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="carousel-item">
+                    <div className="row">
+                      <div className="col-md-4 mb-3">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
+                          <img
+                            className="img-fluid"
+                            alt="100%x280"
+                            src={meet}
+                          />
+                          <div className="card-body">
+                            <h4 className="card-title">Google Meet Clone</h4>
+                            <p className="card-text">
+                              Google Meet Clone using Socket.IO, Nodejs and
+                              React js
+                            </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Meet_Clone"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
+                          <img
+                            className="img-fluid"
+                            alt="100%x280"
+                            src={block}
+                          />
+                          <div className="card-body">
+                            <h4 className="card-title">
+                              Dcyntralize Chatt application
+                            </h4>
+                            <p className="card-text">
+                              Dcyntralize Chatt application Using react and Node
+                              with Gun3 and blockchain
+                            </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Decyntralized-chat-app"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4 mb-3">
+                        <div
+                          className="card"
+                          style={{ width: "100%", height: "100%" }}
+                        >
+                          <img
+                            className="img-fluid"
+                            alt="100%x280"
+                            src={youtube}
+                          />
+                          <div className="card-body">
+                            <h4 className="card-title">Youtube Clone</h4>
+                            <p className="card-text">
+                              Full Youtube clone With Nodejs and React js
+                            </p>
+                            <div className="d-flex justify-content-end">
+                              <a
+                                href="https://github.com/bishalsarkar77730/Youtube-Clone"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                Goto Code
+                              </a>
+                            </div>
                           </div>
                         </div>
                       </div>
