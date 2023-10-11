@@ -1,12 +1,37 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { toast } from "react-toastify";
+import Authdata from "./auth.json";
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleLogin = () => {
+    if (username === "") {
+      toast.warn("Username is required");
+    }
+    if (password === "") {
+      toast.warn("password is required");
+    }
+    const user = Authdata.find(
+      (user) => user.username === username && user.password === password
+    );
+    if (user) {
+      localStorage.setItem("username", user.username);
+      toast.success("Login Success");
+      navigate("/dashboard-home");
+    } else {
+      toast.error("Invalid username or password");
+    }
   };
 
   return (
@@ -34,6 +59,7 @@ const Login = () => {
                     id="form3Example3"
                     className="form-control form-control-lg"
                     placeholder="Enter a valid email address"
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                   <label className="form-label" htmlFor="form3Example3">
                     Email address
@@ -47,6 +73,7 @@ const Login = () => {
                         id="form3Example4"
                         className="form-control form-control-lg"
                         placeholder="Enter password"
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                       <div
                         style={{
@@ -73,6 +100,7 @@ const Login = () => {
                     type="button"
                     className="btn btn-primary btn-lg"
                     style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }}
+                    onClick={handleLogin}
                   >
                     Login
                   </button>

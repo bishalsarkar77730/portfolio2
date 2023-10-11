@@ -1,0 +1,30 @@
+.glassmorphism-container {
+    background: rgba(255, 255, 255, 0.15) !important;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .nav-link{
+    cursor: pointer !important;
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .redwala {
+    background-color: #ff7f7f;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .redwala:hover {
+    background-color: #ff5555;
+  }

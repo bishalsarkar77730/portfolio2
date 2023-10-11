@@ -6,7 +6,6 @@ const PAGE_SIZE = 9;
 
 const AllBlogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
-
   const handlePageChange = (page) => {
     setCurrentPage(page);
   };
@@ -25,20 +24,22 @@ const AllBlogs = () => {
       <div className="row">
         {currentBlogs.map((blog) => (
           <div key={blog.id} className="col-md-6 col-lg-4 mb-4">
-            <div className="card">
+            <div className="card" style={{ width: "100%", height: "100%" }}>
               <img src={blog.image} className="card-img-top" alt={blog.title} />
               <div className="card-body">
                 <h5 className="card-title">{blog.title}</h5>
                 <p className="card-text">{blog.description}</p>
-                <Link
-                  to="/one-blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn-primary"
-                >
-                  Read More
-                </Link>
-              </div>
+                <div className="d-flex justify-content-end">
+                  <Link
+                    to={`/one-blog/${blog.id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-primary"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>  
             </div>
           </div>
         ))}
