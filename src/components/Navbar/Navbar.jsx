@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <nav
-      className="glassmorphism-container navbar navbar-expand-lg navbar-light"
-      style={{ position: "sticky", top: "0", zIndex: "100" }}
-    >
+    className={`glassmorphism-container navbar navbar-expand-lg navbar-light ${
+      isMobileMenuOpen ? "mobile-menu-open" : ""
+    }`}
+    style={{ position: "sticky", top: "0", zIndex: "100" }}
+  >
       <div className="container-fluid">
         <ScrollLink
           className="nav-link"
@@ -21,17 +29,21 @@ const Navbar = () => {
           Bishal<span style={{ color: "white" }}>_</span>Sarkar
         </ScrollLink>
         <button
-          className="navbar-toggler"
+          className={`navbar-toggler ${isMobileMenuOpen ? "collapsed" : ""}`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={`collapse navbar-collapse ${isMobileMenuOpen ? "show" : ""}`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <ScrollLink
@@ -41,6 +53,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 Home
               </ScrollLink>
@@ -53,6 +66,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 About
               </ScrollLink>
@@ -65,6 +79,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 Projects
               </ScrollLink>
@@ -78,6 +93,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 Skills
               </ScrollLink>
@@ -91,6 +107,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 Experiences
               </ScrollLink>
@@ -103,6 +120,7 @@ const Navbar = () => {
                 spy={true}
                 smooth={true}
                 duration={300}
+                onClick={closeMobileMenu}
               >
                 Contact
               </ScrollLink>
@@ -172,12 +190,22 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <RouterLink className="nav-link" to="/blogs">
+              <a
+                href="/blogs"
+                className="nav-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Blogs
-              </RouterLink>
+              </a>
             </li>
             <li className="nav-item">
-              <RouterLink className="nav-link" to="/dashboard-login">
+              <RouterLink
+                className="nav-link"
+                to="/dashboard-login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Dashboard
               </RouterLink>
             </li>

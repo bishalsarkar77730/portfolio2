@@ -1,8 +1,9 @@
 import React from "react";
 import "../Home/Home.css";
+import "./experience.css";
 const Experiences = () => {
   return (
-    <div>
+    <div className="experi">
       <section className="features" id="features">
         <div className="container">
           <div className="more-features">

@@ -19,8 +19,9 @@ const AllBlogs = () => {
   const shouldDisplayPagination = totalPages > 1;
 
   return (
+    <>
     <div className="container mt-4">
-      <h1 className="text-center">Blogs Which Teach Us Alot</h1>
+      <h1 className="text-center" style={{marginBottom:"40px"}}>Blogs Which Teach Us Alot</h1>
       <div className="row">
         {currentBlogs.map((blog) => (
           <div key={blog.id} className="col-md-6 col-lg-4 mb-4">
@@ -93,6 +94,7 @@ const AllBlogs = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

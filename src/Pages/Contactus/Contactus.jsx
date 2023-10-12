@@ -23,7 +23,8 @@ const Contactus = () => {
   };
 
   return (
-    <div class="container">
+    <div class="container contacttus">
+      <h2 class="text-center">Contact Us</h2>
       <div class="row justify-content-center align-items-center">
         <div class="col-md-6">
           <div class="text-center">
