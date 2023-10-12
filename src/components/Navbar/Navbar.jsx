@@ -74,6 +74,19 @@ const Navbar = () => {
               <ScrollLink
                 className="nav-link"
                 aria-current="page"
+                to="Skills"
+                spy={true}
+                smooth={true}
+                duration={300}
+              >
+                Skills
+              </ScrollLink>
+            </li>
+
+            <li className="nav-item">
+              <ScrollLink
+                className="nav-link"
+                aria-current="page"
                 to="experiences"
                 spy={true}
                 smooth={true}

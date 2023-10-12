@@ -20,13 +20,10 @@ const Experiences = () => {
                 <div className="feature-details">
                   <h3>Prolence Technologies</h3>
                   <p>
-                    Prollence is Focused on real Estate, financial & Industrial
-                    Asset Management Solution, and services. Job
-                    Responsibilities :- • Acquired the application completely
-                    from a 3rd party vendor and set it up for our team as
-                    in-house which helped avoid external dependency and also
-                    redused expenses by 70%. • Solve the Daily Raise Problems in
-                    the Site. • Resolve Some CSS issues Using Materialized Ui.
+                    At Prollence, I successfully brought an externally sourced
+                    application in-house, reducing costs by 70% and eliminating
+                    external dependencies. I also addressed daily site issues
+                    and fixed CSS problems using Materialized UI.
                   </p>
                 </div>
               </div>
@@ -40,11 +37,10 @@ const Experiences = () => {
                 <div className="feature-details">
                   <h3>As Freelancer</h3>
                   <p>
-                    Responsibilities :- • Acquired the application completely
-                    from a 3rd party vendor and set it up for our team as
-                    in-house which helped avoid external dependency and also
-                    redused expenses by 70%. • Solve the Daily Raise Problems in
-                    the Site. • Resolve Some CSS issues Using Materialized Ui.
+                    Acquired and set up a third-party application in-house,
+                    reducing expenses by 70% and eliminating external
+                    dependencies. Addressed daily site issues. Fixed CSS
+                    problems using Materialized UI.
                   </p>
                 </div>
               </div>
@@ -58,11 +54,11 @@ const Experiences = () => {
                 <div className="feature-details">
                   <h3>Hamilton KW</h3>
                   <p>
-                    HamiltonKW is Focused on real Estate, financial & Industrial
-                    Asset Management Solution, and services. Job
-                    Responsibilities :- • Solve the Daily Raise Problems in the
-                    Site. • Resolve Some CSS issues Using Materialized Ui. •
-                    Make Custom Designed website using Next and react
+                    HamiltonKW specializes in real estate, financial, and
+                    industrial asset management solutions and services. Job
+                    responsibilities include daily problem-solving on the site,
+                    addressing CSS issues with Materialized UI, and creating
+                    custom-designed websites using Next and React.
                   </p>
                 </div>
               </div>

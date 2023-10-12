@@ -7,6 +7,7 @@ import Contactus from "./Pages/Contactus/Contactus";
 import About from "./Pages/About/About";
 import Experiences from "./Pages/Experiences/Experiences";
 import Projects from "./Pages/Projects/Projects";
+import Experties from "./Pages/Experties/Experties";
 
 const Homee = () => {
   return (
@@ -20,6 +21,9 @@ const Homee = () => {
       </Element>
       <Element name="projects">
         <Projects />
+      </Element>
+      <Element name="Skills">
+        <Experties />
       </Element>
       <Element name="experiences">
         <Experiences />
