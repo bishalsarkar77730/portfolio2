@@ -17,7 +17,6 @@ const Home = () => {
   return (
     <div>
       <section className={!isMobile ? "landing2" : "landing"}>
-      {/* <section className="landing"> */}
         <div className="landing-text">
           <h1>Leave Codes</h1>
           <p>
