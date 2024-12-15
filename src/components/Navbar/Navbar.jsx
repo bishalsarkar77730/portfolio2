@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import logo from "../../images/logo.png";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -12,11 +23,11 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`glassmorphism-container navbar navbar-expand-lg navbar-light ${
-      isMobileMenuOpen ? "mobile-menu-open" : ""
-    }`}
-    style={{ position: "sticky", top: "0", zIndex: "100" }}
-  >
+      className={`glassmorphism-container navbar navbar-expand-lg navbar-light ${
+        isMobileMenuOpen ? "mobile-menu-open" : ""
+      }`}
+      style={{ position: "sticky", top: "0", zIndex: "100" }}
+    >
       <div className="container-fluid">
         <ScrollLink
           className="nav-link"
@@ -26,7 +37,11 @@ const Navbar = () => {
           smooth={true}
           duration={300}
         >
-          Bishal<span style={{ color: "white" }}>_</span>Sarkar
+          {!isMobile ? (
+            <img className="navimage" src={logo} alt="Bishal Sarkar" />
+          ) : (
+            <span>LEAVECODES</span>
+          )}
         </ScrollLink>
         <button
           className={`navbar-toggler ${isMobileMenuOpen ? "collapsed" : ""}`}
@@ -41,7 +56,9 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className={`collapse navbar-collapse ${isMobileMenuOpen ? "show" : ""}`}
+          className={`collapse navbar-collapse ${
+            isMobileMenuOpen ? "show" : ""
+          }`}
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -189,23 +206,11 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            <RouterLink to="/blogs" className="nav-link">
+              Blogs
+            </RouterLink>
             <li className="nav-item">
-              <a
-                href="/blogs"
-                className="nav-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Blogs
-              </a>
-            </li>
-            <li className="nav-item">
-              <RouterLink
-                className="nav-link"
-                to="/dashboard-login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <RouterLink to="/dashboard-login" className="nav-link">
                 Dashboard
               </RouterLink>
             </li>

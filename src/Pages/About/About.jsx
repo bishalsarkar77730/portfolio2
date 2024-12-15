@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import video from "../../Assets/programmer.gif";
+import video from "../../Assets/about.gif";
 
 const About = () => {
   return (

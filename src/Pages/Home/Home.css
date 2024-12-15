@@ -242,12 +242,28 @@ img {
   }
 }
 
+.landing2 {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-top: -100px;
+  margin-bottom: -230px;
+  padding: 100px 0;
+  margin-left: 11%;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
 .landing {
   display: flex;
   align-items: center;
-  padding: 40px 0;
+  height: 100vh;
+  margin-top: -20px;
+  margin-bottom: -150px;
+  padding: 100px 0;
   margin-left: 11%;
   overflow-x: hidden;
+  overflow: hidden;
 }
 
 @media (max-width: 992px) {
@@ -270,6 +286,11 @@ img {
   min-width: 465px;
 }
 
+.landing2 .landing-text {
+  flex: 1;
+  min-width: 465px;
+}
+
 @media (max-width: 992px) {
   .landing .landing-text {
     max-width: 95%;
@@ -279,6 +300,12 @@ img {
 }
 
 .landing .landing-text h1 {
+  width: 100%;
+  font-size: 3.9em;
+  line-height: 1.15;
+}
+
+.landing2 .landing-text h1 {
   width: 100%;
   font-size: 3.9em;
   line-height: 1.15;
@@ -302,6 +329,12 @@ img {
   margin: 0 0 29.41176px;
 }
 
+.landing2 .landing-text p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 0 0 29.41176px;
+}
+
 @media (max-width: 992px) {
   .landing .landing-text p {
     font-size: 16px;
@@ -318,6 +351,11 @@ img {
 .landing .landing-image {
   position: relative;
   right: -70px !important;
+}
+
+.landing2 .landing-image {
+  position: relative;
+  right: -200px !important;
 }
 
 @media (max-width: 992px) {
@@ -355,6 +393,11 @@ img {
   .landing .landing-image {
     right: -130px !important;
   }
+}
+
+.landing2 .landing-image img {
+  width: 70%;
+  height: auto;
 }
 
 .landing .landing-image img {
@@ -603,8 +646,8 @@ img {
     padding: 10px 30px;
   }
 }
-.more-features{
-    padding-top: 50px;
+.more-features {
+  padding-top: 50px;
 }
 .more-features-content {
   display: grid;

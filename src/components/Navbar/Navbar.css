@@ -5,6 +5,11 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
-.nav-link{
+.nav-link {
   cursor: pointer !important;
+}
+
+.navimage {
+  height: 100px;
+  width: 200px;
 }

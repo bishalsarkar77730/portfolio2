@@ -1,30 +1,42 @@
 import "./Home.css";
-import gifff from "../../Assets/home.gif"
+import gifff from "../../Assets/home.gif";
+import { Link as ScrollLink } from "react-scroll";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div>
-      <section className="landing">
+      <section className={!isMobile ? "landing2" : "landing"}>
+      {/* <section className="landing"> */}
         <div className="landing-text">
-          <h1>Hey I'am Bishal Sarkar, Fullstack Developer</h1>
+          <h1>Leave Codes</h1>
           <p>
-            Give Your Thougths, and I will create a Online pressence of it with
-            the help of my expertise
+            Give Your Thougths, and we will create a Online pressence of it with
+            the help of our expertise
           </p>
-          <a
-            href="https://www.fiverr.com/bishal_sarkar_?up_rollout=true"
+          <ScrollLink
             className="btn btn-lg"
-            target="_blank"
-            rel="noopener noreferrer"
+            aria-current="page"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={300}
           >
-            Hire-Me
-          </a>
+            Let's Connect
+          </ScrollLink>
         </div>
-        <div className="landing-image">
-          <img
-            src={gifff}
-            alt="Working Illustration"
-          />
+        <div className="landing-image" style={{ mixBlendMode: "multiply" }}>
+          <img src={gifff} alt="Working Illustration" />
         </div>
       </section>
     </div>

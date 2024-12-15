@@ -4,9 +4,8 @@ const Footerr = () => {
     <div>
       <footer className="footer" id="resources">
         <div className="attribution">
-          Created By
-          <span className="outer-link"> And </span>. Coded by{" "}
-          <span className="outer-link">Bishal Sarkar</span>.
+          Developed by{" "}
+          <span className="outer-link">Bishal Sarkar</span>
         </div>
       </footer>
     </div>

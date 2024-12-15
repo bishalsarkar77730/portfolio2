@@ -1,65 +1,87 @@
 import React from "react";
 import "../Home/Home.css";
 import "./experience.css";
+
 const Experiences = () => {
   return (
-    <div className="experi">
-      <section className="features" id="features">
+    <div className="experiences">
+      <section className="experiences-section" id="experiences">
         <div className="container">
-          <div className="more-features">
-            <div className="section-header">
-              <h2>Experiences</h2>
+          <div className="section-header">
+            <h2>My Experiences</h2>
+            <p className="section-subtitle">
+              A glimpse into my professional journey and contributions.
+            </p>
+          </div>
+
+          <div className="card-box">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="title">Marko & Brando</p>
+                  <p>may 2024 - Present</p>
+                </div>
+                <div class="flip-card-back">
+                  {/* <p class="title">BACK</p> */}
+                  <p>
+                    Contributed to developing Automation tools Using Javascript
+                    and Python. Optimized performance and responsiveness using
+                    node.js, React.js and Next.js, ensuring seamless
+                    cross-platform functionality.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="more-features-content">
-              <div className="feature">
-                <div className="feature-illustration">
-                  <img
-                    src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-brand-recognition.svg"
-                    alt="Feature Illustration Icon"
-                  />
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="title">Hamilton KW</p>
+                  <p>march 2023 - may 2024</p>
                 </div>
-                <div className="feature-details">
-                  <h3>Prolence Technologies</h3>
+                <div class="flip-card-back">
+                  {/* <p class="title">BACK</p> */}
                   <p>
-                    At Prollence, I successfully brought an externally sourced
-                    application in-house, reducing costs by 70% and eliminating
-                    external dependencies. I also addressed daily site issues
-                    and fixed CSS problems using Materialized UI.
+                    Contributed to developing Automation tools Using Javascript
+                    and Python. Optimized performance and responsiveness using
+                    node.js, React.js and Next.js, ensuring seamless
+                    cross-platform functionality.
                   </p>
                 </div>
               </div>
-              <div className="feature">
-                <div className="feature-illustration">
-                  <img
-                    src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-detailed-records.svg"
-                    alt="Feature Illustration Icon"
-                  />
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="title">Prolence Tech</p>
+                  <p>march 2022 - march 2023</p>
                 </div>
-                <div className="feature-details">
-                  <h3>As Freelancer</h3>
+                <div class="flip-card-back">
+                  {/* <p class="title">BACK</p> */}
                   <p>
-                    Acquired and set up a third-party application in-house,
-                    reducing expenses by 70% and eliminating external
-                    dependencies. Addressed daily site issues. Fixed CSS
-                    problems using Materialized UI.
+                    Contributed to developing Automation tools Using Javascript
+                    and Python. Optimized performance and responsiveness using
+                    node.js, React.js and Next.js, ensuring seamless
+                    cross-platform functionality.
                   </p>
                 </div>
               </div>
-              <div className="feature">
-                <div className="feature-illustration">
-                  <img
-                    src="https://raw.githubusercontent.com/MohamedAridah/frontendmentor_url-shortening-api/main/images/icon-fully-customizable.svg"
-                    alt="Feature Illustration Icon"
-                  />
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="title">Freelancer</p>
+                  <p>march 2021 - present</p>
                 </div>
-                <div className="feature-details">
-                  <h3>Hamilton KW</h3>
+                <div class="flip-card-back">
+                  {/* <p class="title">BACK</p> */}
                   <p>
-                    HamiltonKW specializes in real estate, financial, and
-                    industrial asset management solutions and services. Job
-                    responsibilities include daily problem-solving on the site,
-                    addressing CSS issues with Materialized UI, and creating
-                    custom-designed websites using Next and React.
+                    Contributed to developing Automation tools Using Javascript
+                    and Python. Optimized performance and responsiveness using
+                    node.js, React.js and Next.js, ensuring seamless
+                    cross-platform functionality.
                   </p>
                 </div>
               </div>

@@ -16,7 +16,7 @@ const DashNavbar = () => {
         <RouterLink
           className="nav-link"
           aria-current="page"
-          to="home"
+          to="/"
           spy={true}
           smooth={true}
           duration={300}
