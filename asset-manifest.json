@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.af9b95eb.css",
-    "main.js": "/static/js/main.1d2868a3.js",
-    "static/media/home.gif": "/static/media/home.d5fe0c2cc4f1aa1de787.gif",
-    "static/media/programmer.gif": "/static/media/programmer.c7f5ca657dfeaa834e63.gif",
+    "main.css": "/static/css/main.05a75df4.css",
+    "main.js": "/static/js/main.c126d10d.js",
+    "static/media/home.gif": "/static/media/home.7e81c33d73abf97d9d3b.gif",
+    "static/media/about.gif": "/static/media/about.a50a087d3e8aad894f33.gif",
     "static/media/route.jpg": "/static/media/route.3523f08b907091e67149.jpg",
     "static/media/face.jpg": "/static/media/face.ccf4ef1b5776dc4a6551.jpg",
     "static/media/chat.jpg": "/static/media/chat.5eaa4fc5bd0056fef753.jpg",
     "static/media/blockchain.png": "/static/media/blockchain.43e3cd331245188492d9.png",
+    "static/media/logo.png": "/static/media/logo.4f29583d15a35cc62e1c.png",
     "static/media/youtube.png": "/static/media/youtube.6b7478a774df8d908aa9.png",
     "static/media/fooddelivery.jpg": "/static/media/fooddelivery.2845ac5836da4986a5d5.jpg",
     "static/media/employee.jpg": "/static/media/employee.de3a55c60ab4a2a32ed3.jpg",
     "static/media/meet.jpg": "/static/media/meet.c3cc58cf4f17db0d69ab.jpg",
     "static/media/qr.png": "/static/media/qr.93a69978922d3e83be69.png",
     "index.html": "/index.html",
-    "main.af9b95eb.css.map": "/static/css/main.af9b95eb.css.map",
-    "main.1d2868a3.js.map": "/static/js/main.1d2868a3.js.map"
+    "main.05a75df4.css.map": "/static/css/main.05a75df4.css.map",
+    "main.c126d10d.js.map": "/static/js/main.c126d10d.js.map"
   },
   "entrypoints": [
-    "static/css/main.af9b95eb.css",
-    "static/js/main.1d2868a3.js"
+    "static/css/main.05a75df4.css",
+    "static/js/main.c126d10d.js"
   ]
 }
