@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo2.png";
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import "./Navbar.css";
